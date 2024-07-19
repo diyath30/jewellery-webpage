@@ -1,0 +1,67 @@
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: black;    
+}
+
+
+
+.button{
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    transform: translate(-40%,-40%);    
+}
+
+.btn{
+    border: 1px solid rgba(235, 231, 14, 0.986);
+    padding: 10px 30px;
+    color: rgb(228, 247, 59);
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: black; 
+}
+
+body{
+    background-image: url("../images/pexels-f-fotografie-3594582.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: Center;
+}
+
+.section{
+    margin-left: 700px;
+    width: 20%;
+    padding: 10%;
+}
+
+.title{
+    position: left;
+    
+}

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(228, 7, 7);
+    padding: 5px 20px;
+    border: 1px solid rgb(5, 0, 0);
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: rgb(19, 241, 212);
+    color: black;
+}
+
+ul li.active a{
+    background-color: rgb(255, 255, 255);
+    color: black;    
+}
+
+
+
+.button{
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    transform: translate(-40%,-40%);    
+}
+
+.btn{
+    border: 1px solid rgba(235, 231, 14, 0.986);
+    padding: 10px 30px;
+    color: rgb(228, 247, 59);
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: rgb(38, 186, 231);
+    color: black; 
+}
+
+
+.container{
+    width: 1100px;
+    height: 500px;
+    background: #ccc;
+    margin: 120px auto;
+    display:flex;
+    
+}
+
+
+.col{
+    height: 100%;
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: 0.6s;
+}
+
+.col:nth-child(1){
+    background: #283491;
+}
+.col:nth-child(2){
+    background: #bb32a4;
+}
+.col:nth-child(3){
+    background: #19b46c;
+}
+
+h2{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.caption{
+    max-width: 230px;
+    font-size: 12px;
+    margin: 28px 0;
+    display: none;
+}
+
+.caption button{
+    border: 2px solid rgb(7, 0, 0);
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.col img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    
+}
+
+.col:hover{
+    flex-grow: 2.5;
+}
+.col:hover .caption{
+    display: block;
+}
+.col:hover h2{
+    text-align: left;
+}
